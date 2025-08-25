@@ -1,8 +1,3 @@
-Perfect 👍 — here’s the full **README.md** file with everything you asked for (local setup, build, deploy, contributors, etc.) in one place:
-
----
-
-````markdown
 # 🎤 Voice Task Tracker
 
 A **voice-first task tracker** built with **React + Vite** and styled using **Ant Design**.  
@@ -66,7 +61,7 @@ This project is configured for **GitHub Pages deployment** using `gh-pages`.
 
    export default defineConfig({
      plugins: [react()],
-     base: "/voice-task-tracker/", // 🔥 replace with your repo name
+     base: "/voice-task-tracker/",
    });
    ```
 
