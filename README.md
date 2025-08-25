@@ -94,6 +94,7 @@ voice-task-tracker/
 ├── src/             # React components and app logic
 │   ├── components/  # UI components (TaskCard, etc.)
 │   ├── hooks/       # Custom hooks (if any)
+|   ├── utils/       # utility func (if any)
 │   └── App.jsx      # Root component
 ├── vite.config.js   # Vite configuration
 ├── package.json     # Project dependencies & scripts
