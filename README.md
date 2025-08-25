@@ -1,13 +1,112 @@
-# React + Vite
+Perfect 👍 — here’s the full **README.md** file with everything you asked for (local setup, build, deploy, contributors, etc.) in one place:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+````markdown
+# 🎤 Voice Task Tracker
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A **voice-first task tracker** built with **React + Vite** and styled using **Ant Design**.  
+Easily add, edit, and manage your tasks with a modern, responsive interface.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# VOICE-TASK-TRACKER
+## 🚀 Features
+- ✅ Add, edit, and toggle tasks  
+- 🎙️ Voice-first experience  
+- 🎨 Styled with Ant Design  
+- 🌍 Deployed on **GitHub Pages**  
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/karan98mehta/voice-task-tracker.git
+cd voice-task-tracker
+````
+
+### 2. Install dependencies
+
+Make sure you have [Node.js](https://nodejs.org/) (>=16) installed.
+
+```bash
+npm install
+```
+
+### 3. Run the app locally
+
+```bash
+npm run dev
+```
+
+This will start a local dev server (default: [http://localhost:5173](http://localhost:5173)).
+
+---
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+This will generate a `dist` folder with optimized production assets.
+
+---
+
+## 🌍 Deployment (GitHub Pages)
+
+This project is configured for **GitHub Pages deployment** using `gh-pages`.
+
+1. Update **vite.config.js** with the correct repo name:
+
+   ```js
+   import { defineConfig } from "vite";
+   import react from "@vitejs/plugin-react";
+
+   export default defineConfig({
+     plugins: [react()],
+     base: "/voice-task-tracker/", // 🔥 replace with your repo name
+   });
+   ```
+
+2. Deploy with:
+
+   ```bash
+   npm run deploy
+   ```
+
+This will:
+
+* Build the project (`vite build`)
+* Publish the `dist` folder to the `gh-pages` branch
+
+✅ Your site will be live at:
+👉 `https://karan98mehta.github.io/voice-task-tracker/`
+
+---
+
+## 📂 Project Structure
+
+```
+voice-task-tracker/
+├── public/          # Static assets
+├── src/             # React components and app logic
+│   ├── components/  # UI components (TaskCard, etc.)
+│   ├── hooks/       # Custom hooks (if any)
+│   └── App.jsx      # Root component
+├── vite.config.js   # Vite configuration
+├── package.json     # Project dependencies & scripts
+└── README.md        # Documentation
+```
+
+---
+
+## 🧑‍💻 Tech Stack
+
+* ⚛️ [React](https://react.dev/)
+* ⚡ [Vite](https://vitejs.dev/)
+* 🎨 [Ant Design](https://ant.design/)
+* 🚀 [gh-pages](https://www.npmjs.com/package/gh-pages)
+
+---
